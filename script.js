@@ -1,6 +1,13 @@
 const disappear = document.getElementById("disappear")
 const mask = document.getElementById("mask")
 
+// WORKAROUND for a "feature" ON Firefox, where the value of
+// an input field is maintained when the page is refreshed
+// using either Ctrl-R or clicking on the ⟳ refresh button.
+// (To reset the input field in Firefox, you must click in
+// the address bar and then press Enter.)
+mask.value = ""
+
 const rect = disappear.getBoundingClientRect()
 console.log("rect:", rect);
 
