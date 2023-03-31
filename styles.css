@@ -1,0 +1,21 @@
+#disappear {
+  background-color: yellowgreen;
+}
+
+#mask {
+  position: absolute;
+  background-color: #fffe;
+  height: 1em;
+  margin:0;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  opacity: 0;
+  color: red;
+  transition: 1s;
+}
+
+#mask.fade {
+  opacity: 1;
+}
